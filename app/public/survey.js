@@ -28,8 +28,8 @@ $('#submit').click(function(){
 $.post("/api/friends", userData,  function(data){
     console.log(data);
 
-    $("#matchFullName").text(data.name);
-    $("#matchImage").attr("src", data.photo);
+    $("#match").text(data.name);
+    $("#imageMatch").attr("src", data.photo);
 
 })
 
