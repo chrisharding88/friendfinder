@@ -1,6 +1,12 @@
-var configuration ={
+var closeModal = $(".close, #match-name");
+var html = $('html, body');
 
-}
+closeModal.click(function(){
+    $(".bg-modal").css("display", "none");
+})
+
+html.css({overflow: 'auto', height: 'auto'});
+
 
 
 $('#submit').click(function(){
@@ -23,7 +29,7 @@ $('#submit').click(function(){
 
     }
 
-
+    // Displays the object that is made by the user
     console.log(userData);
 $.post("/api/friends", userData,  function(data){
     console.log(data);
