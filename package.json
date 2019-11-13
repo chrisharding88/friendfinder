@@ -1,25 +1,20 @@
 {
-  "name": "lovefinderapp",
-  "version": "1.3.7",
-  "description": "week-12 homework",
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "package.json": "^2.0.1",
-    "package-lock.json": "^1.0.0",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\","
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrisharding88/friendfinder.git"
+    "url": "git+https://github.com/chrisharding88/friendfinder.git"
   },
-  "keywords": [
-    "love"
-  ],
-  "author": "Christopher Harding",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisharding88/friendfinder/issues"
+  },
+  "homepage": "https://github.com/chrisharding88/friendfinder#readme"
 }

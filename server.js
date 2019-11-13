@@ -2,7 +2,6 @@
 // Setting up Dependencies
 var express = require ("express");
 var path = require ("path");
-var nodemon = require("nodemon")
 
 // Setting up express
 var app = express();
