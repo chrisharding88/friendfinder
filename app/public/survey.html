@@ -17,13 +17,13 @@
         <h3><strong>Please Tell Us About Yourself</strong></h3>
 
         <h3>Full Name(required)</h3>
-        <input type="text" id="name" class="form-control" required>
+        <input type="text" id="name" class="form-control validate" required>
 
         <h3>Nickname(optional)</h3>
         <input type="text" id="nickname" class="form-control">
 
         <h3>Photo Link(required)</h3>
-        <input type="text" id="photo" class="form-control" required="">
+        <input type="text" id="photo" class="form-control validate" required="">
 
         <hr>
 
@@ -170,7 +170,7 @@
 
 
 
-        <button type="button" class="btn btn-primary"aria-hidden="true" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+        <button type="button" class="btn btn-primary submit"aria-hidden="true" data-toggle="modal" data-target="#resultsModal">Submit</button>
 
     </form>
 
@@ -185,7 +185,7 @@
     <hr>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -196,7 +196,7 @@
         </div>
         <div class="modal-body">
             <h2 id="match"></h2>
-            <img id="imageMatch"/>
+            <img id="imageMatch" src="" width="450" height="400"/>
           
         </div>
         <div class="modal-footer">
@@ -215,6 +215,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="app/public/survey.js"></script>   
+        <script src="app/public/survey.js"></script> 
 </body>
 </html>

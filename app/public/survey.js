@@ -9,6 +9,8 @@ html.css({overflow: 'auto', height: 'auto'});
 
 
 
+
+
 $('#submit').click(function(){
     event.preventDefault()
     var userData = {
@@ -36,6 +38,8 @@ $.post("/api/friends", userData,  function(data){
 
     $("#match").text(data.name);
     $("#imageMatch").attr("src", data.photo);
+
+    $("#resultsModal").modal("toggle");
 
 })
 

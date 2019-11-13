@@ -9,13 +9,13 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Express data capabilities
-app.use(express.static('app/public'))
+app.use(express.static('app/public'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // Router
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // PORT Listener
 app.listen(PORT, function(){
