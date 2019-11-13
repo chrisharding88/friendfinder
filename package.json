@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/chrisharding88/friendfinder/issues"
   },
-  "homepage": "https://github.com/chrisharding88/friendfinder#readme"
+  "homepage": "https://github.com/chrisharding88/friendfinder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
