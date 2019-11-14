@@ -12,33 +12,40 @@ module.exports = function(app){
     app.post("/api/friends", function(req,res){
 
         // Stores the variables
-        let userScore = req.body.scores
-        const arrScores = [];
-        let friendMatch = 0;
+        let newLoverScore = req.body.scores
+        let loverMatch = 0;
+        const compareArr = []
+        
+        
+
+        
 
         for (var a = 0; a < friendsData.length; a++){
             var difference = 0;
-            for(var b = 0; b < userScore.length; b++){
+
+            for(var b = 0; b < newLoverScore.length; b++){
                 // Compares the difference between the user score and the friends. 
-                difference += Math.abs(parseInt(friendsData[a].scores[b])-parseInt(userScore[b]));
+                difference += Math.abs(parseInt(friendsData[a].scores[b])-parseInt(newLoverScore[b]));
             }
             // User scores get pushed into the array
-            arrScores.push(difference);
+            compareArr.push(difference);
         }
 
-        for(var i = 0; arrScores.length; i++){
-            if (arrScores[i] <= arrScores[friendMatch]) {
-                friendMatch = i;
+        for(var i = 0; compareArr.length; i++){
+            if (compareArr[i] <= compareArr[loverMatch]) {
+                loverMatch = i;
             }      
         
         }
 
         // Returns for the best match
-        let foundLover = friendsData[friendMatch];
+        let foundLover = friendsData[loverMatch];
+        var newLover = req.body;
+
         res.json(foundLover);
 
-        console.log(req.body);
-        friendsData.push(req.body);
+        console.log(newLover);
+        friendsData.push(newLover);
 
 
     });

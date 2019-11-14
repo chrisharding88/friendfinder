@@ -11,11 +11,14 @@ html.css({overflow: 'auto', height: 'auto'});
 
 
 
-$('#submit').click(function(){
+$('#submit').click(function(event){
     event.preventDefault()
+    var nameInput = $('#name').val();
+    var photoLink = $('#photo').val();
+
     var userData = {
-        name: $("#name").val(),
-        photo: $("#photo").val(),
+        name: nameInput,
+        photo: photoLink,
         scores: [
             $("#q1").val(),            
             $("#q2").val(),
@@ -31,16 +34,19 @@ $('#submit').click(function(){
 
     }
 
-    // Displays the object that is made by the user
-    console.log(userData);
-$.post("/api/friends", userData,  function(data){
-    console.log(data);
+    
 
-    $("#match").text(data.name);
-    $("#imageMatch").attr("src", data.photo);
-
+    $("#match").text(nameInput);
+    $("#imageMatch").attr("src", photoLink);
     $("#resultsModal").modal("toggle");
 
+    // Displays the object that is made by the user
+    console.log(userData);
+    $.post("/api/friends", userData,  function(data){
+        console.log(data);
+
+
+    })
 })
 
 
@@ -51,5 +57,3 @@ $.post("/api/friends", userData,  function(data){
 
 
 
-
-});
