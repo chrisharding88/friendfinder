@@ -1,25 +1,23 @@
 // Dependencies
 var friendsData = require("../data/friends");
 
-module.exports = function(app){
+module.exports = function(app) {
+  // Grab the JSON of friends data
+  app.get("/api/friends", function(req, res) {
+    res.json(friendsData);
+  });
 
-    // Grab the JSON of friends data
-    app.get("/api/friends", function(req, res){
-        res.json(friendsData);
-    })
+  // POST the API
+  app.post("/api/friends", function(req, res) {
+    // Stores the variables
+    // let newLoverScore = req.body.scores
+    // let loverMatch = 0;
+    // const compareArr = []
+    var userData = req.body;
+    console.log(userData);
+    res.json(userData);
 
-    // POST the API
-    app.post("/api/friends", function(req,res){
-
-        // Stores the variables
-        let newLoverScore = req.body.scores
-        let loverMatch = 0;
-        const compareArr = []
-        
-        
-
-        
-
+    /*
         for (var a = 0; a < friendsData.length; a++){
             var difference = 0;
 
@@ -47,13 +45,12 @@ module.exports = function(app){
         console.log(newLover);
         friendsData.push(newLover);
 
+        */
+  });
 
-    });
+  app.post("/api/clear", function(req, res) {
+    friendsData.length = [];
 
-    app.post("/api/clear", function(req, res){
-        friendsData.length = [];
-
-        res.json({ok: true});
-    })
-
-}
+    res.json({ ok: true });
+  });
+};

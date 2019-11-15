@@ -1,187 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>LoveFinder Survey</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   </head>
-   <body>
-      <div class="container">
-         <form action="">
-            <h1><strong>LoveFinder Survey</strong></h1>
-            <hr>
-            <h3><strong>Please Tell Us About Yourself</strong></h3>
-            <h3>Full Name(required)</h3>
-            <input type="text" id="name" class="form-control validate" required>
-            <h3>Nickname(optional)</h3>
-            <input type="text" id="nickname" class="form-control">
-            <h3>Photo Link(required)</h3>
-            <input type="text" id="photo" class="form-control validate" required="">
-            <hr>
-            <h3><strong>Question 1</strong></h3>
-            <h4>I'm a more loyal person.</h4>
-            <select class="selectedAnswer" id="q1" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 2</strong></h3>
-            <h4>Sporting Events are more fun then Music Events.</h4>
-            <select class="selectedAnswer" id="q2" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 3</strong></h3>
-            <h4>Cats are better than Dogs</h4>
-            <select class="selectedAnswer" id="q3" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 4</strong></h3>
-            <h4>A person who is desperate is a major pet peeve.</h4>
-            <select class="selectedAnswer" id="q4" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 5</strong></h3>
-            <h4>Vegan food is better than meat.</h4>
-            <select class="selectedAnswer" id="q5" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 6</strong></h3>
-            <h4>Candy is more better than fruit.</h4>
-            <select class="selectedAnswer" id="q6" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 7</strong></h3>
-            <h4>I'm more outgoing.</h4>
-            <select class="selectedAnswer" id="q7" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 8</strong></h3>
-            <h4>I'd rather live in the city than in the suburbs.</h4>
-            <select class="selectedAnswer" id="q8" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 9</strong></h3>
-            <h4>A person being rich and good looking matters more than a person being broke and average looking.</h4>
-            <select class="selectedAnswer" id="q9" required>
-               <option value="">Select Option</option>
-               <option value="1">1(Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <h3><strong>Question 10</strong></h3>
-            <h4>Communication is the key of having a successful relationship.</h4>
-            <select class="selectedAnswer" id="q10" required>
-               <option value="">Select Option</option>
-               <option value="1">1 (Strongly Disagree)</option>
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5(Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <button type="button" class="btn btn-primary submit" aria-hidden="true" data-toggle="modal"
-               data-target="#resultsModal">Submit</button>
-         </form>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>LoveFinder Survey</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+   <div class="container">
+      <form action="">
+         <h1><strong>LoveFinder Survey</strong></h1>
          <hr>
-         <footer class="footer">
-            <div class="container">
-               <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/chrisharding88/friendfinder">GitHub
+         <h3><strong>Please Tell Us About Yourself</strong></h3>
+         <h3>Full Name(required)</h3>
+         <input type="text" id="name" class="form-control" required>
+         <h3>Nickname(optional)</h3>
+         <input type="text" id="nickname" class="form-control">
+         <h3>Photo Link(required)</h3>
+         <input type="text" id="photo" class="form-control" required="">
+         <hr>
+         <h3><strong>Question 1</strong></h3>
+         <h4>I'm a more loyal person.</h4>
+         <select class="selectedAnswer" id="q1" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 2</strong></h3>
+         <h4>Sporting Events are more fun then Music Events.</h4>
+         <select class="selectedAnswer" id="q2" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 3</strong></h3>
+         <h4>Cats are better than Dogs</h4>
+         <select class="selectedAnswer" id="q3" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 4</strong></h3>
+         <h4>A person who is desperate is a major pet peeve.</h4>
+         <select class="selectedAnswer" id="q4" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 5</strong></h3>
+         <h4>Vegan food is better than meat.</h4>
+         <select class="selectedAnswer" id="q5" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 6</strong></h3>
+         <h4>Candy is more better than fruit.</h4>
+         <select class="selectedAnswer" id="q6" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 7</strong></h3>
+         <h4>I'm more outgoing.</h4>
+         <select class="selectedAnswer" id="q7" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 8</strong></h3>
+         <h4>I'd rather live in the city than in the suburbs.</h4>
+         <select class="selectedAnswer" id="q8" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 9</strong></h3>
+         <h4>A person being rich and good looking matters more than a person being broke and average looking.</h4>
+         <select class="selectedAnswer" id="q9" required>
+            <option value="">Select Option</option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+         <h3><strong>Question 10</strong></h3>
+         <h4>Communication is the key of having a successful relationship.</h4>
+         <select class="selectedAnswer" id="q10" required>
+            <option value="">Select Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+         </select>
+         <br>
+         <br>
+
+         <!-- Your issue lies here... -->
+         <button type="button" class="btn btn-primary submit" aria-hidden="true" data-toggle="modal"
+            data-target="#resultsModal">
+            Submit
+         </button>
+      </form>
+      <hr>
+      <footer class="footer">
+         <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a
+                  href="https://github.com/chrisharding88/friendfinder">GitHub
                   Repo</a>
-            </div>
-         </footer>
-         <hr>
-         <!-- Modal -->
-         <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLongTitle">Your Best Match Is...</h5>
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         </div>
+      </footer>
+      <hr>
+      <!-- Modal -->
+      <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Your Best Match Is...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true">&times;</span>
-                     </button>
-                  </div>
-                  <div class="modal-body">
-                     <h2 id="match"></h2>
-                     <img id="imageMatch" width="450" height="400" />
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <h2 id="match"></h2>
+                  <img id="imageMatch" width="450" height="400" />
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                </div>
             </div>
          </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
-         integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-         crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-         crossorigin="anonymous"></script>
-      <script src="app/data/survey.js"></script>
-   </body>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+   <script type="text/javascript">
+      var closeModal = $(".close, #match-name");
+      var html = $("html, body");
+
+      closeModal.click(function () {
+         $(".bg-modal").css("display", "none");
+      });
+
+      html.css({ overflow: "auto", height: "auto" });
+
+
+      /*Your issue lies here ====>*/$("#submit").click(function (event) {
+         event.preventDefault();
+         var nameInput = $("#name").val();
+         var photoLink = $("#photo").val();
+
+         var userData = {
+            name: nameInput,
+            photo: photoLink,
+            scores: [
+               $("#q1").val(),
+               $("#q2").val(),
+               $("#q3").val(),
+               $("#q4").val(),
+               $("#q5").val(),
+               $("#q6").val(),
+               $("#q7").val(),
+               $("#q8").val(),
+               $("#q9").val(),
+               $("#q10").val()
+            ]
+         };
+         // Displays the object that is made by the user
+         console.log(userData);
+         $.post("/api/friends", userData, function (response) {
+            console.log(response);
+         })
+
+         $("#match").text(nameInput);
+         $("#imageMatch").attr("src", photoLink);
+      });
+   </script>
+</body>
+
 </html>
